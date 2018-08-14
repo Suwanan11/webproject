@@ -1,0 +1,61 @@
+@(content:Html)
+<html lang="en">
+    <head>
+
+    <head>
+    <body bgcolor="black"></body>
+    <style>
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #FFFFFF;
+            border-radius : 50px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 9px 20px;
+            text-decoration: none;
+            border-radius : 50px;
+        }
+
+        li a:hover {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+
+    </style>
+    </head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="/assets/stylesheets/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link href="../../public/stylesheets/bootstrap-3.3.7-dist/css/bootstrap.css">
+       <img src="/assets/images/60n.gif">
+    </head>
+    <body>
+        <div class="container-fluid"style="background-color: #696969">
+            <div class="row">
+            </div>
+            <div class="row" >
+                <div class="col-md-2"style="background-color: #696969">>
+                    @menu_page()
+                </div>
+                <div class=" col-md-10"style="background-color: #FFFFFF">>
+                    @content
+                </div>
+            </div>
+            <br>
+            <div class="row">
+            @address()
+            </div>
+        </div>
+    </body>
+</html>

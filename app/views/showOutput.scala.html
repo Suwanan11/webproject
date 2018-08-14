@@ -1,0 +1,19 @@
+@(o1:clothes)
+<div class="container-fluid">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="panel panel-group">
+            <div  class="panel panel-primary">
+                <div class="panel-heading">@o1.getName</div>
+                <div class="panel-body"style="color: black">
+                    รหัส:@o1.getId()<br>
+                    ชื่อ:@o1.getName()<br>
+                    แบรนด์:@o1.getBrand()<br>
+                    ราคา:@o1.getPrice()<br>
+                    จำนวน:@o1.getNumber()<br>
+                    ไซต์:@o1.getCategory()<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<h2>เพิ่มข้อมูลสินค้า</h2>
+<body bgcolor="black"></body>
+    <div class="container-fluid" style="background-color: mediumaquamarine" >
+            <form action="/postClothes" method="post">
+                <form action="/portClothes" method="post">
+                    <br>
+
+                    <td><b> รหัสสินค้า : </b> </td>
+                <td><input type="text" name="id" width="10" maxlength="10" required="required"></td>
+                <br><br>
+
+                    <td><b> ชื่อสินค้า : </b></td>
+                <td><input type="text" name="name" width="50" maxlength="45" required="required">
+                <br><br>
+
+                <td><b> แบรนด์ :</b></td>
+                    <td><input type="text" name="brand" width="10"></td>
+                    <br><br>
+
+                    <td><b> ราคาสินค้า : </b></td>
+                <td><input type="number" name="price" width="10" maxlength="10" required="required"></td>
+
+                    <br><br>
+                    <td><b> จำนวน :</b></td>
+                    <td><input type="number" name="number" width="10" maxlength="10" required="required"></td>
+                    <br><br>
+
+                    <td><b> ไซต์:</b></td>
+                    <td><input type="text" name="category" width="10"></td>
+                    <br><br>
+
+
+                    <br><br>
+                <input type="submit" class="btn-success" value="Save">
+                <input type="reset" class="btn-danger" value="Cancal">
+                </form>
+            </form>
+    </div>
